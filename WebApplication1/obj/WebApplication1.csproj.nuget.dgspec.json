@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/wevi0z/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {}
+  },
+  "projects": {
+    "/home/wevi0z/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/wevi0z/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+        "projectName": "WebApplication1",
+        "projectPath": "/home/wevi0z/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+        "packagesPath": "/home/wevi0z/.nuget/packages/",
+        "outputPath": "/home/wevi0z/RiderProjects/WebApplication1/WebApplication1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/wevi0z/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.23280.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0-preview.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/wevi0z/.dotnet/sdk/6.0.410/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
