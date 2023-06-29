@@ -74,3 +74,4 @@
 /home/wevi0z/RiderProjects/WebApplication1/WebApplication1/obj/Debug/net6.0/ref/WebApplication1.dll
 /home/wevi0z/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net6.0/Npgsql.dll
 /home/wevi0z/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/wevi0z/RiderProjects/WebApplication1/WebApplication1/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

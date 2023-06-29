@@ -1,5 +1,7 @@
 using System.Reflection.Metadata;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using WebApplication1;
 using WebApplication1.Models;
 using WebApplication1.Repositories;
@@ -11,7 +13,24 @@ builder.Services.AddDbContext<ApplicationContext>(options => options.UseNpgsql(
 ));
 builder.Services.AddMvc();
 builder.Services.AddTransient<IBaseRepository<User>, BaseRepository<User>>();
-builder.Services.AddMvc();
+builder.Services.AddTransient<IBaseRepository<Book>, BaseRepository<Book>>();
+// builder.Services.AddMvc();
+
+builder.Services.AddAuthorization();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidIssuer = AuthOptions.ISSUER,
+            ValidateAudience = true,
+            ValidAudience = AuthOptions.AUDIENCE,
+            ValidateLifetime = true,
+            IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
+            ValidateIssuerSigningKey = true,
+        };
+    });
 
 // Add services to the container.
 
@@ -32,6 +51,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllers();
 

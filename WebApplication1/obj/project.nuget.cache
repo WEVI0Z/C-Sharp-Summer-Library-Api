@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BaSFP+lQ0ilYqGe4y5l0giVXbHeZBm2U+Viei9yt4PEb9X2DHeDnuI+TS6Q5XH3+9df2dmUvmg/mPh+gW+BiuA==",
+  "dgSpecHash": "bbdIx9flrlu9YU2Jxm1n9HxM9MP1an9wBaZIBgMEJFBW7ubuiS9YLCpb9zsyLDeoXD1E2W2FW4OpyMEV7pXBNQ==",
   "success": true,
   "projectFilePath": "/home/wevi0z/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
   "expectedPackageFiles": [
     "/home/wevi0z/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/home/wevi0z/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/home/wevi0z/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.19/microsoft.aspnetcore.authentication.jwtbearer.6.0.19.nupkg.sha512",
     "/home/wevi0z/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/wevi0z/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/wevi0z/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",
