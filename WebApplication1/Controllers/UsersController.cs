@@ -117,7 +117,7 @@ public class UsersController
         return success ? new JsonResult($"Update successful {document.Id}") : new JsonResult("Update was not successful");
     }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public JsonResult Delete(Guid id)
     {
         bool success = true;

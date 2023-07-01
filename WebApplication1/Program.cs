@@ -14,6 +14,9 @@ builder.Services.AddDbContext<ApplicationContext>(options => options.UseNpgsql(
 builder.Services.AddMvc();
 builder.Services.AddTransient<IBaseRepository<User>, BaseRepository<User>>();
 builder.Services.AddTransient<IBaseRepository<Book>, BaseRepository<Book>>();
+builder.Services.AddTransient<IBaseRepository<Favourite>, BaseRepository<Favourite>>();
+builder.Services.AddTransient<IBaseRepository<Rate>, BaseRepository<Rate>>();
+builder.Services.AddTransient<IBaseRepository<Review>, BaseRepository<Review>>();
 // builder.Services.AddMvc();
 
 builder.Services.AddAuthorization();

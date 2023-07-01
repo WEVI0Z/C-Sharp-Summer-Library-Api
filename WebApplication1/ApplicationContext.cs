@@ -8,6 +8,9 @@ public class ApplicationContext: DbContext
 {
     public DbSet<User> Users { get; set; }
     public DbSet<Book> Books { get; set; }
+    public DbSet<Favourite> Favourites { get; set; }
+    public DbSet<Rate> Rates { get; set; }
+    public DbSet<Review> Reviews { get; set; }
 
     public ApplicationContext(DbContextOptions<ApplicationContext> options): base(options)
     {
