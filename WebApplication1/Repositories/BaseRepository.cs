@@ -31,14 +31,22 @@ public class BaseRepository<TDbModel> : IBaseRepository<TDbModel> where TDbModel
 
     public TDbModel Update(TDbModel model)
     {
-        var toUpdate = Context.Set<TDbModel>().FirstOrDefault(m => m.Id == model.Id);
-        if (toUpdate != null)
-        {
-            toUpdate = model;
-        }
-        Context.Update(toUpdate);
+        // var toUpdate = Context.Set<TDbModel>().FirstOrDefault(m => m.Id == model.Id);
+        // if (toUpdate != null)
+        // {
+        //     toUpdate = model;
+        // }
+        // Context.Update(model);
+        // Context.SaveChanges();
+        // return toUpdate;
+
+        var trackedBlog = Context.Users.Find(model.Id);
+
+        Context.Entry(trackedBlog).CurrentValues.SetValues(model);
+
         Context.SaveChanges();
-        return toUpdate;
+
+        return model;
     }
 
     public TDbModel Get(Guid id)
